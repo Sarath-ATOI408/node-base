@@ -9,8 +9,8 @@ env:
   ECR_REPOSITORY: od-stage/sample
   ECS_SERVICE: sample-node-service-6f9p83hm
   ECS_CLUSTER: od-stage
-  ECS_TASK_DEFINITION: .aws/task-definition.json     # 👈 Replace with your actual path if different
-  CONTAINER_NAME: sample-node
+  ECS_TASK_DEFINITION: .aws/task-definition.json
+  CONTAINER_NAME: node-sample
 
 permissions:
   contents: read
