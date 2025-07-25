@@ -3,6 +3,12 @@ name: Deploy to Amazon ECS
 on:
   push:
     branches: [ "main" ]
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch to deploy'
+        required: true
+        default: 'main'
 
 env:
   AWS_REGION: ap-south-1
